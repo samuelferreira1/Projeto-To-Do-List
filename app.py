@@ -1,6 +1,14 @@
 from utilitarios import adicionar_tarefa, obter_status, continuar_execucao
+from biblioteca_arquivos import json_valido, criar_json, ler_arquivo, salvar_arquivo
 
-lista_geral = []
+
+ARQUIVO = 'dados.json'
+
+if not json_valido(ARQUIVO):
+    criar_json(ARQUIVO)
+
+lista_geral = ler_arquivo(ARQUIVO)
+
 while True:
 
     nome_da_tarefa = str(input("Nome da Tarefa: "))
@@ -12,5 +20,6 @@ while True:
     if continuar_execucao() == "N":
         break
 
-
+salvar_arquivo(ARQUIVO, lista_geral)
+print(f"\nDados salvos com sucesso em {ARQUIVO}!")
 print(lista_geral)

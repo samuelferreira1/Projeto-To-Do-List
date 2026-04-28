@@ -1,0 +1,14 @@
+[
+    {
+        "nome_da_tarefa": "Andar de carro",
+        "status_da_tarefa": "Pendente"
+    },
+    {
+        "nome_da_tarefa": "Viajar de Avião",
+        "status_da_tarefa": "Pendente"
+    },
+    {
+        "nome_da_tarefa": "Passear com o cachorro",
+        "status_da_tarefa": "Concluído"
+    }
+]

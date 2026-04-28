@@ -1,3 +1,5 @@
+import json
+
 def adicionar_tarefa(lista_tarefas:list, nome:str, status:str) -> None:
     nova_tarefa = {
         "nome_da_tarefa":nome, 
@@ -18,6 +20,4 @@ def continuar_execucao() -> str:
         if opcao in ["S", "N"]:
             return opcao
         print(f"A opção \"{opcao}\" não existe! Por favor, digite exatamete [S/N] ")
-
-
 
